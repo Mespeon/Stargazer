@@ -6,8 +6,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+    <!--
     <div id="wrapper" padding margin-right margin-left>
-        <ion-button color="dark" center (click)="testClick()">Test Comms</ion-button>
     </div>
+    -->
+    <ion-grid>
+        <ion-row align-items-center>
+            <ion-col align-self-center><ion-button color="dark" center (click)="testClick()" strong block>Test Comms (GET)</ion-button></ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+            <ion-col align-self-center><ion-button color="light" center (click)="testPoster()" strong block>Submit something (POST)</ion-button></ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+            <ion-col align-self-center>
+                <ion-text color="primary"><h1>Random Stuff</h1></ion-text>
+                <ion-text color="dark"><p id="randomstuff">{{ messeji }}</p></ion-text>
+            </ion-col>
+            <ion-col align-self-center><ion-button color="secondary" center (click)="testReplace()" strong block>Randomize that thing</ion-button></ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
