@@ -4,6 +4,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+	<div padding>
+		<ion-text color="tertiary" strong><h1>Automatic Randomizer</h1></ion-text>
+		<ion-text color="dark"><h6>The text displayed below will be randomized using recursively timed calls to an API using a service provider.</h6></ion-text>
+	</div>
+	<!-- Random Text Cards -->
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title strong>Randomize Me</ion-card-title>
+			<ion-card-subtitle>PROVIDED BY SIBYL API</ion-card-subtitle>
+		</ion-card-header>		
+		<ion-card-content>{{ randomtext }}</ion-card-content>
+	</ion-card>
 </ion-content>

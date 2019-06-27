@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+// Providers
+import { PosterService } from '../../providers/poster.service';
+
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -7,6 +10,11 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public posterService: PosterService) {
+	console.log('Tab2 constructed.');
+  }
 
+  ngOnInit() {
+    
+  }
 }

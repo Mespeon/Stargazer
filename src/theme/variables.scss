@@ -74,4 +74,20 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  .md ion-segment-button {
+	text-transform: capitalize;
+  }
+
+  /** ION SEGMENT **/
+  ion-segment {
+	width: 80%;
+	margin: auto;
+	border-bottom: 1px;
+  }
+
+  ion-segment-button {
+	--indicator-color-checked: #0cd1e8;
+	font-size: 12px;
+  }
 }
